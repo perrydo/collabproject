@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Process</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/treefavicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Significant Native Trees in Ontario</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" aria-current="page" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="process.html">Process</a></li>
+                        <li class="nav-item"><a class="nav-link" href="deliverables.html">Deliverables</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Header - set the background image for the header in the line below-->
+        <header class="py-5 bg-image-full" style="background-image: url('assets/darkmapbackground.png')">
+            <div class="text-center my-5 toptext">
+                <img class="img-fluid rounded-circle mb-4" src="assets/treecanopy.jpg" alt="..." />
+                <h1 class="text-white fs-3 fw-bolder">Process Steps</h1>
+                <p class="text-white mb-0">How we created the solution for this project</p>
+            </div>
+        </header>
+        <!-- Content section-->
+        <section class="py-5">
+            <div class="container my-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <h2>Building A Map</h2>
+                        <p class="lead">A simple, lightweight, interactive open-source base map</p>
+                        <p class="mb-2">As building the project based on free, open-source technology is one of the major requirements, leaflet map – a leading open-source JavaScript library for mobile-friendly interactive maps – was chosen. Leaflet utilizes map data from OpenStreetMap as well as map tiles from Mapbox and has very simple, easy-to-use API.</p>
+                        <p class="mb-2">Many factors were taken into consideration for the design of the map. Most web maps tend to have a set zoom and starting location. However, as this project aims to have users across Ontario input significant native tree data on-the-go, the map was set to automatically centered to the user’s current location – if they allow permission to access their location. Furthermore, dark theme was applied to help save energy when travelling and help the tree markers stand out more. A textbox containing the link to the submission form was also added to map.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Image element - set the background image for the header in the line below-->
+        <div class="py-5 bg-image-full" style="background-image: url('assets/kobosurvey.png')">
+            <!-- Put anything you want here! The spacer below with inline CSS is just for demo purposes!-->
+            <div style="height: 20rem"></div>
+        </div>
+        <!-- Content section-->
+        <section class="py-5">
+            <div class="container my-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <h2>Making A Submission Form</h2>
+                        <p class="lead">A simple survey form to collect significant tree data</p>
+                        <p class="mb-2">Now that the base map has been set up, it is time to start collecting significant native tree data. Because this project relies on public input, having a free, simple submission process is uttermost important. We decided to use KoBo Toolbox, which is a free open-source tool for mobile data collection used to collect data in the field using mobile devices such as mobile phones or tablets. Particularly, we used a product called Humanitarian Response – which can be used offline and very easy to use, suitable for people who want to submit tree data in the field where cell phone signals may not present, and provides unlimited submissions and data storage.</p>
+                        <p class="mb-2">The submission form collects the location of the user/tree automatically. Users can also change the location; however, it is advised that they should submit data right in the field. A list of most common native tree species in Ontario is provided for users to choose quickly, including the options for trees that are not on the list. Users will have to submit a photo of the significant tree for identification – that way other users can also visit the tree and recognize it. They are also encouraged to leave a comment explaining why the tree they submitted is significant.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="py-5 bg-image-full" style="background-image: url('assets/geojson.png')">
+            <!-- Put anything you want here! The spacer below with inline CSS is just for demo purposes!-->
+            <div style="height: 20rem"></div>
+        </div>
+        <!-- Content section-->
+        <section class="py-5">
+            <div class="container my-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <h2>How did Bourne send data to those who need it?</h2>
+                        <p class="lead">JSON</p>
+                        <p class="mb-2">In order for the tree data from the survey to be added to the map, it has to be exported in geoJSON format and added to the map. Data from the survey is stored in the Humanitarian Server hosted by UN Office for the Coordination of Humanitarian Affairs (OCHA) and can be accessed through a GET request via KoBo Toolbox API.</p>
+                        <p class="mb-2">The geoJSON was then downloaded and added to the map via JavaScript. We also set a pop-up for each marker, showing the species name, photo and any comment if available – all pulled directly from the geoJSON file. In addition to the data collected from the survey, data collected by students of GEOM65, Fleming College in the fall semester of 2021 was also added to the map using a separate geoJSON file. All the tree markers were put into either a deciduous or coniferous layer to enable users to filter the results. Each layer is distinguished by a different marker colour, and the data points collected by Fleming College students also have different colours comparing to the markers from the survey. </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="py-5 bg-image-full" style="background-image: url('assets/markers.png')">
+            <!-- Put anything you want here! The spacer below with inline CSS is just for demo purposes!-->
+            <div style="height: 20rem"></div>
+        </div>
+        <!-- Content section-->
+        <section class="py-5">
+            <div class="container my-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <h2>The Joy Of Automation</h2>
+                        <p class="lead">Finishing touches to keep the map running properly</p>
+                        <p class="mb-2">So far, the process of adding the geoJSON file from KoBo Toolbox to the map had been done manually. In order to automate the project, we had to set up a way for the geoJSON to be updated automatically by github. Using the API token from the Humanitarian Response account used to create the survey, as well as the python codes for a GET command to pull the geoJSON file from KoBo Toolbox generated by postman.com, we started setting up the python file that would be run by github to update the local geoJSON file. </p>
+                        <p class="mb-2">The GET command in the python file pulls all the data from KoBo Toolbox down into a local geoJSON file. However, as the project focuses on significant Ontario native trees, we added a geoJSON file of the boundaries of Ontario and coded a filter to eliminate any input from the submission form that is outside of the province. The output is then be put into a new geoJSON file, and this is the file that is coded into the web map.</p>
+                        <p class="mb-2">After verifying that the python codes run properly on Visual Studio Code, we set a github workflow that would automatically run the python file in the repository. A yml file was created, setting up the process to be run every 5 minutes. Now that everything has been automated, the project is finished and ready for a large audience to experience.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="py-5 bg-image-full" style="background-image: url('assets/githubflow.jpg')">
+            <!-- Put anything you want here! The spacer below with inline CSS is just for demo purposes!-->
+            <div style="height: 20rem"></div>
+        </div>
+        <!-- Content section-->
+        <section class="py-5">
+            <div class="container my-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <h2>Trial And Error </h2>
+                        <p class="lead">The struggle is real</p>
+                        <p class="mb-2">One of the first problems we encountered was the images pulled from KoBo Toolbox were broken in the pop-ups. After many trials of adding data, deleting data, making different surveys, we found that only the photos from the first survey that we created during our test run could be displayed. This is most likely a glitch from the server side of KoBo Toolbox, and to solve this problem, we had to update what originally was a test survey into our official survey.</p>
+                        <p class="mb-2">Another problem relating to the images was also discovered. Due to the massive amount of repetitive JavaScript, our original plan was to put all the JS codes into a separate JS file and reference the script in the html file. However, when the JS was in an external file,  the images became broken again. Therefore, we had to put all the JS codes back into the html file. Luckily, the JS script to add the data from Fleming College students ran perfectly fine in the external file – probably because there was no image to pull from an online database server.</p>
+                        <p class="mb-2">The biggest problem that plagued our project was trying to have the yml run properly. Initially, the file kept failing to run properly. We could not find any thing wrong with our syntax for the longest time. After finding out that we could see what the error was if we clicked into the notification (pictured), we discovered that the problem lied in the requirements.txt file that was used to list all the package. It took many trials – which actually took a very long time due to github server being very slow during the day, by the elimination process, we found out that the json module needs to put input as jsonschema in the txt file in order for it to run.</p>
+                        <img src="assets/failedgeojson.png" alt="failed attempts" style="max-width:100%;height:auto;">
+                        <img src="assets/error.png" alt="error message" style="max-width:100%;height:auto;">
+                        <img src="assets/successgeojson.png" alt="successful attempts" style="max-width:100%;height:auto;">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white">&copy; PRISM Collab Project 2022</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
