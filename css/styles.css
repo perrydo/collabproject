@@ -11330,8 +11330,8 @@ textarea.form-control-lg {
 }
 
 .imgformat {
-    height: 250px;
-    max-width: 250px;
+    /* height: 250px; */
+    max-width: 100%;
 }
 .imgcentre {
     display: flex;
