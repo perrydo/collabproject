@@ -11323,14 +11323,14 @@ textarea.form-control-lg {
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 100%) {
   .column {
     width: 100%;
   }
 }
 
 .imgformat {
-    /* height: 250px; */
+    height: 200px;
     max-width: 100%;
 }
 .imgcentre {
