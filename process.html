@@ -78,15 +78,17 @@
             <div class="container my-5">
                 <div class="row justify-content-center">
                     <div class="col-lg-6">
-                        <h2>How did Bourne send data to those who need it?</h2>
-                        <p class="lead">JSON</p>
-                        <p class="mb-2">In order for the tree data from the survey to be added to the map, it has to be exported in geoJSON format and added to the map. Data from the survey is stored in the Humanitarian Server hosted by UN Office for the Coordination of Humanitarian Affairs (OCHA) and can be accessed through a GET request via KoBo Toolbox API.</p>
-                        <p class="mb-2">The geoJSON was then downloaded and added to the map via JavaScript. We also set a pop-up for each marker, showing the species name, photo and any comment if available – all pulled directly from the geoJSON file. In addition to the data collected from the survey, data collected by students of GEOM65, Fleming College in the fall semester of 2021 was also added to the map using a separate geoJSON file. All the tree markers were put into either a deciduous or coniferous layer to enable users to filter the results. Each layer is distinguished by a different marker colour, and the data points collected by Fleming College students also have different colours comparing to the markers from the survey. </p>
+                        <h2>Objective 3: Perform Spatial Analysis </h2>
+                        <!-- <p class="lead">JSON</p> -->
+                        <p class="mb-2">Data relevant to the organization's goal of reducing food poverty was visualized in order to help the client understand the spatial distribution of resources and people who need them. Several static maps were produced that could be shown on the website independent of the ArcGIS Online account. All spatial analyses were performed using ArcGIS Pro 2.8.0.</p>
+                        <p class="mb-2">The locations of the food charities that are associated with the City of Kawartha Lakes and Haliburton County Roundtable for Ending Poverty were geocoded and presented on a map along with the boundaries of the regions they work with, including the Treaty 20 lands. The list of the locations was provided by the client and was geocoded using Geocoder.ca. The boundary shapefiles for the City of Kawartha Lakes and Haliburton County were taken from the Government of Ontario data catalogue, and the boundaries for the Treaty 20 lands were obtained from a map found on the website of the Niigaaning G'Chi Mnissing Trust (2019) and then manually georeferenced. </p>
+                        <p class="mb-2">The distribution of the food charities was analysed for areas with clusters, and compared to the population density of the region. This visualizes the amount of resources available per capita for residents. The data for the population density per dissemination area was obtained from the 2021 Canadian census results.</p>
+                        <p class="mb-2">The time it takes to drive to the nearest food charity was calculated using a service area network analysis, which shows how accessible the food charities are by road. The shapefile for the roads and their speed limits were obtained from the Government of Ontario data open portal.</p>
                     </div>
                 </div>
             </div>
         </section>
-        <div class="py-5 bg-image-full" style="background-image: url('assets/markers.png')">
+        <div class="py-5 bg-image-full" style="background-image: url('assets/spatialanalysis.png')">
             <!-- Put anything you want here! The spacer below with inline CSS is just for demo purposes!-->
             <div style="height: 20rem"></div>
         </div>
